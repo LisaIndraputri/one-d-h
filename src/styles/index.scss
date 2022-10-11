@@ -12,9 +12,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.app-container {
-  min-height: 100vh;
-  width: 100%;
+.app {
+  &-container {
+    min-height: 100vh;
+    width: 100%;
+  }
+  &-img {
+    width: 500px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 .d-flex-center {
   display: flex;

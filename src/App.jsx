@@ -1,6 +1,8 @@
 import Card from './components/Card'
+import {useState} from 'react'
 
 function App() {
+  const [isShow, setIsShow] = useState(false)
   const cardList = [{
       title: 'first',
       price: {
@@ -14,14 +16,24 @@ function App() {
       }
     }
   ]
+  const renderImg = () => {
+    setTimeout(() => {
+      setIsShow(true)
+    }, 1000)
+  }
+  renderImg()
   return (
     <div className="app-container d-flex-center">
       <h3>List Card</h3>
       <div className='app-img'>
         {/* TASK
         Please update Card Component to be this card example */}
-        <img src={require('./assets/imgs/example.png')} alt="example-img" />
+        {
+          isShow ? <img src={require('./assets/imgs/example.png')} alt="example-img" /> : ''
+        }
       </div>
+      {/* TASK
+      please resolve the error in console */}
       {
         cardList.map(itm => 
           <Card 

@@ -14,11 +14,22 @@ function Card({data}) {
     // you can use price.currency to decide the currency
     // After that please create the unit test
     return `Price at ${formatMoney(data.price)}`
+  }  
+  const pressCard = () => {
+    // TASK
+    // Please stop this alert from being called when user click the button 
+    alert('card')
+  }
+  const pressBuy = () => {
+    alert('buy')
   }
   return (
-    <div className='card-container'>
+    <div className='card-container' onClick={pressCard}>
       <h3>{ titleCard() }</h3>
-      <p>{ priceCard() }</p>
+      <div>
+        <p className='card-price'>{ priceCard() }</p>
+        <div className="button" onClick={pressBuy}>Buy</div>
+      </div>
     </div>
   )
 }

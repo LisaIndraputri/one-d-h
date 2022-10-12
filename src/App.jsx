@@ -13,6 +13,12 @@ function App() {
       title: 'second',
       price: {
         amount: 24000
+      },
+      extendInfo: {
+        discountPrice: {
+          currency: 'Rp',
+          ammount: 15000
+        }
       }
     }
   ]

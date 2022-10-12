@@ -14,7 +14,13 @@ function Card({data}) {
     // you can use price.currency to decide the currency
     // After that please create the unit test
     return `Price at ${formatMoney(data.price)}`
-  }  
+  }
+  const discountPriceCard = () => {
+    // TASK 
+    // Please create utils to get discount price
+    // eg get(extendInfo, 'discountPrice.currency','USD') --> return 'IDR'
+    // After that please create the unit test
+  }
   const pressCard = () => {
     // TASK
     // Please stop this alert from being called when user click the button 

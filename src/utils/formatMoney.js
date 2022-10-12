@@ -2,5 +2,5 @@
   if (!money || !money.amount) {
     return ''
   }
-  return (money.currency || 'Rp') + money.amount
+  return money.amount
 }

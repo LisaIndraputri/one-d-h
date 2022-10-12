@@ -10,7 +10,8 @@ function Card({data}) {
   const priceCard = () => {
     // TASK 
     // Please create utils to show price amount
-    // Example -> from 1200000 to 1.200.000
+    // Example -> from 1200000 to RP1.200.000
+    // you can use price.currency to decide the currency
     // After that please create the unit test
     return `Price at ${formatMoney(data.price)}`
   }
